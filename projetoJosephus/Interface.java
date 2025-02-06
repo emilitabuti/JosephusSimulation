@@ -99,8 +99,6 @@ public class Interface implements ActionListener{
             }
         });
         
-        _jbIniciar.setBackground(new Color(200, 20, 50));//muda a cor do botão _jbIniciar para vermelho
-        
         // Adicionar botões e textos no panel
         JPanel botoesPanel = new JPanel();
         botoesPanel.setLayout(new FlowLayout());
@@ -382,7 +380,7 @@ public class Interface implements ActionListener{
         while (noAtual!= null && tam < labels.length) {
             conteudo = (Individuo) noAtual.getConteudo();
             if (conteudo.getStatus().equals("Vivo")) {//se o status estiver como "Vivo" a imagem sera vivo.png
-                imagem = new ImageIcon("imagens/vivo.png"); 
+                imagem = new ImageIcon("imagens/homer.png"); 
             } else {
                 imagem = new ImageIcon("imagens/fantasma.png"); //se o status estiver como "Morto" a imagem sera fantasma.png
             }
